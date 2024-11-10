@@ -4,9 +4,9 @@ metadata:
   name: myapp-service
 spec:
   selector:
-    app: myapp
+    app: myapp                  # Matches pods with the label "app: myapp"
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
-  
+    - port: 8080                # Service port (external)
+      protocol: TCP
+      targetPort: 8080          # Port on the pod that the application listens on
+  type: ClusterIP               # Default service type (internal-only)
