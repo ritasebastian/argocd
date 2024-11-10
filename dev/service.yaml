@@ -6,7 +6,7 @@ spec:
   selector:
     app: myapp                  # Matches pods with the label "app: myapp"
   ports:
-    - port: 8080                # Service port (external)
+    - port: 80                # Service port (external)
       protocol: TCP
-      targetPort: 8080          # Port on the pod that the application listens on
+      targetPort: 80          # Port on the pod that the application listens on
   type: ClusterIP               # Default service type (internal-only)
