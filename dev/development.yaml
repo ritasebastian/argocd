@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp                    # Matches pods with label "app: myapp"
-  replicas: 2                        # Creates two replicas of the myapp pod
+  replicas: 5                        # Creates two replicas of the myapp pod
   template:
     metadata:
       labels:
