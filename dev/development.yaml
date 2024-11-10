@@ -16,4 +16,4 @@ spec:
       - name: myapp
         image: nginx:latest
         ports:
-        - containerPort: 8080       # Exposes port 8080 within the container
+        - containerPort: 80       # Exposes port 8080 within the container
